@@ -11,8 +11,8 @@ def home_view(request):
     return render(request, 'home.html')
 
 @login_required
-def profile_view(request):
-    return render(request, 'profile.html')
+def settings_view(request):
+    return render(request, 'settings.html')
 
 @redirect_authenticated_user
 def signup_view(request):
